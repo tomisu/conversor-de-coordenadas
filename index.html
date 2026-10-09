@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coordinate Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Coordinate Converter</h1>
+    <p>Convert R and A into X and Y (same formula as Sala1).</p>
+
+    <form id="converter-form">
+      <label for="r">R</label>
+      <input id="r" name="r" type="number" step="any" required>
+
+      <label for="a">A</label>
+      <input id="a" name="a" type="number" step="any" required>
+
+      <button type="submit">Convert</button>
+    </form>
+
+    <section class="result" aria-live="polite">
+      <div>X: <strong id="x-value">-</strong></div>
+      <div>Y: <strong id="y-value">-</strong></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
